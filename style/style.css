@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.hero-image {
+background-image: url("../assets/borehole\ image.png");
+height: 600px;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-text {
+ text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text h1 {
+font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 3em;
+}
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+margin: 50px;
+padding:20px;
+background-color: #0b739d;
+color: white;
+border: #0b739d;
+border-radius:50px ;
+}
+button:hover{
+  background-color: white;
+  color: #0b739d;
+  cursor: pointer;
+}
