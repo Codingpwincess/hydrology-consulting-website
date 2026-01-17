@@ -1,21 +1,27 @@
 body, html {
-    height: 100%;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  height: 100%;
+  background-color: #0b739d;
+  font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
+/**HERO PAGE STYLING**/
 .hero-image {
-background-image: url("../assets/borehole\ image.png");
-height: 600px;
-background-position: center;
+  background-image: url("../assets/borehole\ image.png");
+  height: 600px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
+.page-hero{
+  background-color: white;
+}
 
 .hero-text {
- text-align: center;
+  text-align: center;
   position: relative;
   top: 50%;
   left: 50%;
@@ -23,28 +29,77 @@ background-position: center;
   color: white;
 }
 .hero-text h1 {
-font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: 3em;
 }
+ 
+@media (max-width:600px){
+.hero-text h1{
+  font-size: 1em;
+}
+}
 .logo{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 button {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-margin: 50px;
-padding:20px;
-background-color: #0b739d;
-color: white;
-border: #0b739d;
-border-radius:50px ;
+  margin: 50px;
+  padding:20px;
+  background-color: #0b739d;
+  color: white;
+  border: #0b739d;
+  border-radius:50px ;
 }
 button:hover{
   background-color: white;
   color: #0b739d;
   cursor: pointer;
+}
+
+/**ABOUT US PAGE STYLING**/
+
+#about-page{
+  background-color: #0b739d;
+  color: white;
+  height: 600px ;
+  margin-top: 0;
+  text-align: center;
+}
+.about-us h1{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-align: center;
+  padding: 15px;
+  font-size: 3em;
+}
+
+@media (max-width:600px){
+  .about-us p{
+font-size: 15px;
+  }
+  
+}
+
+@media (min-width:768px){
+  .about-us p{
+font-size: 20px;
+  }
+  
+}
+
+@media (min-width:1336px){
+  .about-us p{
+font-size: 25px;
+  }
+  
+}
+
+.about-us hr{
+  color: white;
+  width: 70%;
 }
