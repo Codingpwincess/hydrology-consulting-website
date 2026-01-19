@@ -1,6 +1,7 @@
 body, html {
   margin: 0;
   height: 100%;
+  color: white;
   background-color: #0b739d;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
@@ -106,3 +107,52 @@ font-size: 25px;
 
 /**SERVICES PAGE STYLING**/
 
+.services{
+  height: 100%;
+  margin: 0;
+}
+.services-maintext{
+  background-color:white;
+  color: #0b739d;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 2.5em;
+}
+.first-service{
+  margin: 0;
+}
+.first-service img{
+width:50%;
+height:25%;
+display: flex;
+justify-self: left;
+
+}
+
+.second-service img{
+  width: 50%;
+  height: 25%;
+display: flex;
+  justify-self: end;
+}
+@media (min-width:768px){
+  .second-service img{
+    display:grid;
+    justify-self: end;
+  }
+}
+
+.third-service img{
+  width:50%;
+height:25%;
+display: flex;
+justify-self: left;
+}
+
+.fourth-service img{
+  width:50%;
+height:25%;
+display: flex;
+justify-self:end;
+}
