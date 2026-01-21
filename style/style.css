@@ -134,8 +134,11 @@ display: flex;
 justify-self: left;
 
 }
-.first-serv-text{
+.first-serv-text, .second-service-text, .third-service-text, .fourth-service-text{
   color: #0b739d;
+}
+.service-list{
+  font-weight: 500;
 }
 /**flipcard material**/
 .flip-card {
@@ -186,11 +189,8 @@ justify-self: left;
   transform: rotateY(180deg);
 }
 .second-service img{
-  width: 25%;
-  height: 25%;
 display: flex;
-
-  justify-self: end;
+justify-self: end;
 }
 @media (min-width:768px){
   .second-service img{
@@ -200,15 +200,11 @@ display: flex;
 }
 
 .third-service img{
-  width:25%;
-height:25%;
 display: flex;
 justify-self: left;
 }
 
 .fourth-service img{
-  width:25%;
-height:25%;
 display: flex;
 justify-self:end;
 }
