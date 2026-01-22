@@ -36,9 +36,9 @@ body, html {
   font-size: 3em;
 }
  
-@media (max-width:600px){
+@media (max-width:375px){
 .hero-text h1{
-  font-size: 2    em;
+  font-size: 2em;
 }
 }
 .logo{
@@ -121,15 +121,18 @@ font-size: 25px;
   font-weight: 700;
   font-style: normal;
   text-align: center;
+  margin: 0;
   padding: 10px;
   font-size: 2.5em;
 }
 .first-service{
   margin: 0;
-   display: flex;          /* Enables flexbox */
+  display: flex;          /* Enables flexbox */
   align-items:normal
 }
-.first-service img{
+.first-service img, .second-service img, .third-service img, .fourth-service img{
+  height: 100%;
+  width: 100%;
 display: flex;
 justify-self: left;
 
@@ -139,72 +142,24 @@ justify-self: left;
 }
 .service-list{
   font-weight: 500;
-}
-/**flipcard material**/
-.flip-card {
-  width: 75%;
-  height: 100;
-  perspective: 1000px;
- 
-}
-@media(max-width:600px){
-  .flip-card{
-    font-size: 7px;
-  }
+  font-display: swap;
 }
 
-.flip-inner {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
+/**CONTACT PAGE STYLING**/
+
+.contact-us h1{
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
 }
-.flip-card:hover .flip-inner {
-  transform: rotateY(180deg);
-  
-}
-.flip-card:hover .service-heading{
-  backface-visibility: hidden;
-}
-.flip-front, .flip-back {
+.contact-us p{
   display: flex;
-  flex-direction: column;      /* Ensures content stays in a row */
-  align-items: center;      /* Vertically centers content */
-  justify-content: space-around; /* Spaces items evenly */
-  padding: 5px;            /* Prevents text from touching edges */
-  box-sizing: border-box;   /* Includes padding in the width calculation */
-  overflow: hidden;         /* Ensures nothing spills out */
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  transform: rotateX(0deg);
-  border-radius: 8px;
-  font-size: 1.4 rem;
-  color: white;
+  justify-self: left;
 }
-.flip-back {
-  transform: rotateY(180deg);
-}
-.second-service img{
-display: flex;
-justify-self: end;
-}
-@media (min-width:768px){
-  .second-service img{
-    display:grid;
-    justify-self: end;
+
+@media(max-width:375px){
+  .contact-us p{
+font-size: 10px;
   }
 }
 
-.third-service img{
-display: flex;
-justify-self: left;
-}
-
-.fourth-service img{
-display: flex;
-justify-self:end;
-}
